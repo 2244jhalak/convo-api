@@ -2,7 +2,7 @@
   "name": "convo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/app/server.js",
   "scripts": {
     "start": "node ./dist/app/server.js",
     "dev": "ts-node-dev --respawn --transpile-only ./src/app/server.ts",
