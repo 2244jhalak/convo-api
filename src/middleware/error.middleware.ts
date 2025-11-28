@@ -1,4 +1,4 @@
-import { Request, Response, NextFunction } from "express";
+import { Request, Response, NextFunction } from 'express';
 
 export interface CustomError extends Error {
     status? : number
@@ -8,10 +8,10 @@ export const globalErrorHandler = (
   err: unknown,
   req: Request,
   res: Response,
-  next: NextFunction
+  _next: NextFunction
 ) => {
   let status = 500;
-  let message = "Internal Server Error";
+  let message = 'Internal Server Error';
 
   if (err instanceof Error) {
     message = err.message;
